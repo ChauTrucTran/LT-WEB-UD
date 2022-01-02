@@ -1,0 +1,236 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NQTSHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sp.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="icon" href="img/logo_icon.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <!--Bat dau header top-->
+        <div class="headerTop">
+            <div class="container">
+                <span style="font-style: italic;">SĐT:</span>
+                <span style="font-weight: bold; color:black;">0123.456.789 (Hồ Chí Minh)</span>
+            </div>
+        </div>
+        <!--Bat dau header mid-->
+        <div class="headerMid">
+            <div class="container">
+                <div class="headerMid-logo">
+                    <a href="index.html" title="Trang chủ">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="headerMid-search">
+                    <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search" id="getIn">
+                    <button type="button" value="search" id="getBut"><img src="img/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiem();"></button>
+                </form>
+                <div class="headerMid-notify">
+                    <!--Đăng nhập, đăng ký, giỏ hàng-->
+                    <ul>
+                        <li class="login">
+                            <a href="dangnhap.html"><span><img src="img/user-login-icon.svg" title="Đăng nhập" alt="user-login-icon"></span>Đăng nhập</a>
+                        </li>
+                        <li class="register">
+                            <a href="dangky.html"><span><img src="img/user-register-icon.svg" title="Đăng ký" alt="user-register-icon"></span>Đăng ký</a>
+                        </li>
+                        <!--shopping-cart-icon.svg-->
+                        <li class="shopping-cart">
+                            <a href="giohang.html"><span><img src="img/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Ket thuc header-->
+    <!--Bat dau navbar-->
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="nonbh.html">NÓN BẢO HIỂM</a>
+            </li>
+            <li>
+                <a href="nontr.html">NÓN THỜI TRANG</a>
+            </li>
+            <li>
+                <a href="nontt.html">NÓN THỂ THAO</a>
+            </li>
+            <li>
+                <a href="phukien.html">PHỤ KIỆN</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Ket thuc navbar-->
+
+    <div class="text-lien-ket">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">TRANG CHỦ</a>&nbsp;
+                    <i class="fa fa-angle-right"></i>
+                    <a href="nontr.html">NÓN THỜI TRANG</a>
+                    <i class="fa fa-angle-right"></i>
+                    <a href="nontr-ct2.html">Royal M20C-Nón bảo hiểm 3/4</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chi-tiet">
+        <div class="chi-tiet-sp">
+            <div class="container">
+                <div class="anh-sp">
+                    <img src="img/sp-ing/sp9.png" alt="">
+                </div>
+                <div class="thong-tin-sp">
+                    <div class="ten-sp">
+                        <h2>Royal M20C-Nón bảo hiểm 3/4</h2>
+                    </div>
+                    <div class="gia-sp">
+                        <h1>
+                            <p>560.000<sup>đ</sup></p>
+                        </h1>
+                    </div>
+                    <div class="tt-sp">
+                        <label>Thông số kĩ thuật:</label>
+                        <ul>
+                            <li>Kích cỡ: 56 – 59cm</li>
+                            <li>Trọng lượng: 850g ± 50g</li>
+                            <li> size L: 55 - 57cm - size XL: 57 - 59cm</li>
+                            <li>Đạt chuẩn: Quatest VN</li>
+                            <li>Bảo hành: 1 năm tại shop </li>
+                            <li>Tình trạng: Mới 100%</li>
+                            <li>Giá bán: 560.000đ</li>
+                        </ul>
+                    </div>
+                    <div class="other">
+                        <input type="button" value="MUA NGAY" id="mua" onclick="mua();">
+                        <input type="button" value="THÊM VÀO GIỎ HÀNG" id="add" onclick="addshop();">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chi-tiet-sp-them">
+            <div class="menu-chi-tiet-sp">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#chi-tiet">Mô tả</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chi-tiet-sp-text">
+                    <div class="container" id="chi-tiet">
+                        <div class="noi-dung">
+                            <h2>
+                                <p><strong>Royal M20C là chiếc mũ bảo hiểm gọn gàng, đẹp.</strong></p>
+                            </h2>
+                            <p>
+                                Được thiết kế theo phong cách hiện đại với những đường nét bo tròn đầy tinh tế gọn gàng đã khiến ngoại hình của mũ bảo hiểm Royal M20C trở nên tinh tế gọn hàng hơn rất nhiều so với những thế hệ mũ bảo hiểm ¾ trước đây.
+                                Một nguyên nhân khiến cho mọi người thường chọn mũ bảo hiểm nửa đầu thay vì nón fullface hoặc mũ ¾ chính là vì sự gọn gàng, tiện lợi trong sử dụng, bảo quản, nhưng có thể thấy, với Royal M20C,
+                                bạn hoàn toàn yên tâm về sự gọn gàng, tiện lợi trong khi sử dụng.
+                            </p>
+                            <h2>
+                                <p><strong>Không chỉ đẹp Royal M20C còn là mũ bảo hiểm chất lượng, mang đến sự an toàn cao nhất cho người sử dụng.</strong></p>
+                            </h2>
+                            <p>
+                                Mang đến sự an toàn cho người sử dụng là tính năng cốt lõi của bất kỳ chiếc mũ bảo hiểm nào. M20C không chỉ là một chiếc mũ bảo hiểm đẹp mà còn là chiếc mũ bảo hiểm mang đến sự an toàn cao nhất cho người sử dụng.
+                                Mang những thiết kế kinh điển của dòng mũ 3/4, M20C có khả năng bảo vệ vùng sau gáy, cổ, hai bên thái dương người đội trong trường hợp xảy ra va chạm giao thông.
+                            </p>
+                            <h2>
+                                <p><strong>Lớp vỏ ngoài của nón</strong></p>
+                            </h2>
+                            <p>
+                                Lớp vỏ nón được làm từ nhựa ABS nguyên sinh cao cấp. Đặc tính của loại nhựa này là độ cứng cao, khó bị trầy sướt khi va chạm nhẹ, chịu được nhiệt độ cao lên tới 310 độ C nên rất bền chắc với thời gian. Thiết kế lỗ thoáng khí là những khe rãnh ở trên đỉnh
+                                nón mang đến sự thông thoáng và không gây khó chịu cho bạn trong thời gian đội.</p>
+                            <h2>
+                                <p><strong>Phần mút xốp EPS cao cấp - lớp đệm êm ái</strong></p>
+                            </h2>
+                            <p>
+                                Lớp mút xốp - phần tiếp xúc với đầu bên trong lớp vỏ. Chất liệu chính được làm từ nhựa EPS. Đặc tính: hấp thu xung động và chịu tác động ngoại lực tốt giúp bảo vệ đầu tối đa, độ bền cao, đặc tính kháng khuẩn, chống ẩm mốc, trọng lượng nhẹ nên không gây
+                                cảm giác nặng đầu khi đội nón.</p>
+                            <h2>
+                                <p><strong>Tấm vải lót 3S</strong></p>
+                            </h2>
+                            <p>
+                                Vải lót 3S bao phủ phần mút xốp tiếp xúc trực tiếp với vùng đầu. Cấu tạo bao gồm lớp lưới thoáng khí phối với lớp mút mỏng mềm mại tạo cảm giác dễ chịu cho người đội và không gây hầm bí. Công nghệ 3S của nón bảo hiểm Andes dễ dàng tháo lắp để vệ sinh
+                                nón bảo hiểm loại bỏ mùi hôi, ẩm mốc, v.v tích trữ bên trong lòng nón giữ nón luôn thơm tho và ngăn ngừa các bệnh da dầu: gầu, nấm, v.v.</p>
+                            <h2>
+                                <p><strong>Quai cài và khóa ốc</strong></p>
+                            </h2>
+                            <p>Quai cài thiết kế chắc chắn với lớp đệm mềm được phối khéo léo dính chặt vào nón đảm bảo độ an toàn. Dây điều chỉnh dễ sử dụng, căng chỉnh kích cỡ dễ dàng.</p>
+                            <p>Khóa ốc kết nối chặt chẽ các lớp của nón bảo hiểm Andes được làm từ Inox 304 với khả năng chống oxy hóa cao, khó bị gỉ sét, luôn sang bóng tạo vẻ đẹp thẩm mỹ cực sang trọng cho nón.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li class="footer1">
+                    <div class="heading">Chính sách</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Dịch vụ & hỗ trợ</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                            <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                            <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Thông tin liên hệ</div>
+                    <div class="content-footer">
+                        <div class="social-media">
+                            <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Góp ý, phản ánh</div>
+                    <div class="content-footer">
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

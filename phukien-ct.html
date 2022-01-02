@@ -1,0 +1,232 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NQTSHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-sp.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="icon" href="img/logo_icon.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <!--Bat dau header top-->
+        <div class="headerTop">
+            <div class="container">
+                <span style="font-style: italic;">SĐT:</span>
+                <span style="font-weight: bold; color:black;">0123.456.789 (Hồ Chí Minh)</span>
+            </div>
+        </div>
+        <!--Bat dau header mid-->
+        <div class="headerMid">
+            <div class="container">
+                <div class="headerMid-logo">
+                    <a href="index.html" title="Trang chủ">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="headerMid-search">
+                    <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search" id="getIn">
+                    <button type="button" value="search" id="getBut"><img src="img/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiem();"></button>
+                </form>
+                <div class="headerMid-notify">
+                    <!--Đăng nhập, đăng ký, giỏ hàng-->
+                    <ul>
+                        <li class="login">
+                            <a href="dangnhap.html"><span><img src="img/user-login-icon.svg" title="Đăng nhập" alt="user-login-icon"></span>Đăng nhập</a>
+                        </li>
+                        <li class="register">
+                            <a href="dangky.html"><span><img src="img/user-register-icon.svg" title="Đăng ký" alt="user-register-icon"></span>Đăng ký</a>
+                        </li>
+                        <!--shopping-cart-icon.svg-->
+                        <li class="shopping-cart">
+                            <a href="giohang.html"><span><img src="img/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Ket thuc header-->
+    <!--Bat dau navbar-->
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="index.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="nonbh.html">NÓN BẢO HIỂM</a>
+            </li>
+            <li>
+                <a href="nontr.html">NÓN THỜI TRANG</a>
+            </li>
+            <li>
+                <a href="nontt.html">NÓN THỂ THAO</a>
+            </li>
+            <li>
+                <a href="phukien.html">PHỤ KIỆN</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Ket thuc navbar-->
+
+    <div class="text-lien-ket">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="index.html">TRANG CHỦ</a>&nbsp;
+                    <i class="fa fa-angle-right"></i>
+                    <a href="phukien.html">PHỤ KIỆN</a>
+                    <i class="fa fa-angle-right"></i>
+                    <a href="phukien-ct.html">EGO Găng tay xe máy dài ngón</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="chi-tiet">
+        <div class="chi-tiet-sp">
+            <div class="container">
+                <div class="anh-sp">
+                    <img src="img/pk-img/pk1.jpg" alt="">
+                </div>
+                <div class="thong-tin-sp">
+                    <div class="ten-sp">
+                        <h2>EGO Găng tay xe máy dài ngón</h2>
+                    </div>
+                    <div class="gia-sp">
+                        <h1>
+                            <p>150.000<sup>đ</sup></p>
+                        </h1>
+                    </div>
+                    <div class="tt-sp">
+                        <label>Thông số sản phẩm:</label>
+                        <ul>
+                            <li>Model: Găng tay dài ngón</li>
+                            <li>Chất liệu: sợi tổng hợp và vải thun Spandex, gù nhựa TPU</li>
+                            <li>Size: XL, XXL</li>
+                            <li>Bảo hành: 1 năm tại shop </li>
+                            <li>Xuất xứ: Việt Nam</li>
+                            <li>Giá bán: 150.000đ</li>
+                        </ul>
+                    </div>
+                    <div class="other">
+                        <input type="button" value="MUA NGAY" id="mua" onclick="mua();">
+                        <input type="button" value="THÊM VÀO GIỎ HÀNG" id="add" onclick="addshop();">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chi-tiet-sp-them">
+            <div class="menu-chi-tiet-sp">
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#chi-tiet">Mô tả</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="chi-tiet-sp-text">
+                    <div class="container" id="chi-tiet">
+                        <div class="noi-dung">
+                            <p>
+                                Những chuyến phượt dài không thể thiếu đôi găng tay bảo hộ chất lượng. Găng tay xe máy EGO dài ngón là mẫu găng có chất liệu vải dễ chịu, trang bị gù bảo vệ, cảm ứng điện thoại thông minh giúp phượt thủ linh hoạt thao tác khi lái xe.
+                            </p>
+                            <H2>
+                                <p><strong>Điểm nổi bật găng tay xe máy EGO dài ngón</strong></p>
+                            </H2>
+                            <p>Giá chỉ 150.000đ, nhưng mẫu găng tay full ngón EGO được tích hợp khá đầy đủ các chức năng của một găng đi phượt.</p>
+                            <h2>
+                                <p><strong>Chất liệu</strong></p>
+                            </h2>
+                            <p>Găng tay có thiết kế lưới giúp thoáng mát khi dùng, kết hợp với chất liệu sợi tổng hợp và vải thun Spandex linh hoạt co giãn, hạn chế tê tay khi dùng lâu. Chất liệu này giúp ôm tay hơn nên găng tay EGO dài ngón không cồng kềnh
+                                to bự, phù hợp nam và nữ.
+                            </p>
+                            <p>Găng có phần gù nhựa TPU được may ẩn bên trong lớp vải, giúp giảm bớt góc cạnh gồ ghề của găng tay phượt, cân bằng giữa thẩm mỹ và độ an toàn.</p>
+                            <p>
+                                Chất liệu của cặp bao tay này là sợi vải Spandex với khả năng đàn hồi, co giãn tốt, mang lại cảm giác sử dụng thoải mái, không gò bó. Chất liệu này cũng được thiết kế theo dạng lưới ô thoáng, giúp lưu thông không khí tốt hơn, hạn chế ra mồ hôi.
+                            </p>
+                            <p>
+                                Với các loại bao tay xe máy thông thường, phần gù cứng được lắp ráp nổi khiến tính thể thao, thời trang của chúng giảm đi đáng kể. Với EGO, gù nhựa TPU được giấu chìm dưới lớp vải. Nhờ đó, nó vẫn an toàn nhưng vẫn gọn, đẹp hơn rất nhiều.
+                            </p>
+                            <h2>
+                                <p><strong>Tính năng</strong></p>
+                            </h2>
+                            <p>Lớp lót dày dưới má tay giúp bám tay lái và hạn chế độ rung của tay cầm, tăng độ an toàn khi gặp ma sát.</p>
+                            <p>Vải cảm ứng tại ngón trỏ giúp phượt thủ sử dụng điện thoại tiện lợi mà không cần tháo găng.</p>
+                            <p>Phần cổ tay có khóa dán in logo EGO dễ dàng trong thao tác đóng - mở và buộc chặt găng.</p>
+                            <p>Phía lòng cặp bao tay, nhà sản xuất thiết kế vải bố dày dặn, tăng khả năng ma sát khi chống tay xuống đường, khi va chạm. Đồng thời, nó giúp nắm tay lái được chắc chắn hay cầm đồ vật dễ dàng, không trơn trượt.</p>
+                            <p>Được tích hợp phím cảm ứng tại ngón trỏ và người dùng có thể dùng điện thoại dễ dàng với các chức năng chính, rất hữu ích cho các chuyến đi tour.</p>
+                            <p>Miếng dán cố định ở cổ tay giúp cảm giác sử dụng chắc chắn, an toàn hơn, không bị tuột. Logo EGO tinh tế tăng thêm tính thể thao, thời trang.</p>
+                            <h2>
+                                <p><strong>Kết luận</strong></p>
+                            </h2>
+                            <p>Găng tay EGO là sự kết hợp giữ gu thời trang đường phố và tính năng an toàn của phụ kiện phượt. Với giá thành cạnh tranh, các sản phẩm của EGO từ găng tay đến mũ bảo hiểm phượt đều được các bạn trẻ đón nhận. Hãy liên hệ với
+                                shop để chọn them các mẫu găng tay EGO đẹp khác nhé.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li class="footer1">
+                    <div class="heading">Chính sách</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Dịch vụ & hỗ trợ</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                            <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                            <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Thông tin liên hệ</div>
+                    <div class="content-footer">
+                        <div class="social-media">
+                            <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Góp ý, phản ánh</div>
+                    <div class="content-footer">
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

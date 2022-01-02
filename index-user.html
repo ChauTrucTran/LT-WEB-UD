@@ -1,0 +1,789 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NQTSHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.css">
+    <link rel="icon" href="img/logo_icon.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <!--Bat dau header top-->
+        <div class="headerTop">
+            <div class="container">
+                <span style="font-style: italic;">SĐT:</span>
+                <span style="font-weight: bold; color:black;">0123.456.789 (Hồ Chí Minh)</span>
+            </div>
+        </div>
+        <!--Bat dau header mid-->
+        <div class="headerMid">
+            <div class="container">
+                <div class="headerMid-logo">
+                    <a href="index-user.html" title="Trang chủ">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="headerMid-search">
+                    <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search" id="getIn">
+                    <button type="button" value="search" id="getBut"><img src="img/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiemuser();"></button>
+                </form>
+                <div class="headerMid-notify">
+                    <!--Đăng nhập, giỏ hàng, đăng xuất-->
+                    <ul>
+                        <li class="login">
+                            <a href="user/index.html"><span><img src="img/user-circle-solid.svg" ></span>Quản lý tài khoản</a>
+                        </li>
+                        <li class="shopping-cart">
+                            <a href="giohang-user.html"><span><img src="img/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                        </li>
+                        <li class="logout">
+                            <a href="index.html"><span><img src="img/sign-out-alt-solid.svg" title="Đăng xuất"></span>Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Ket thuc header-->
+
+    <!--Bat dau navbar-->
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="index-user.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="nonbh-user.html">NÓN BẢO HIỂM</a>
+            </li>
+            <li>
+                <a href="nontr-user.html">NÓN THỜI TRANG</a>
+            </li>
+            <li>
+                <a href="nontt-user.html">NÓN THỂ THAO</a>
+            </li>
+            <li>
+                <a href="phukien-user.html">PHỤ KIỆN</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Ket thuc navbar-->
+
+    <!-- Thẻ Chứa Slideshow -->
+    <div class="slideshow-container">
+        <!-- Kết hợp hình ảnh và nội dung cho mội phần tử trong slideshow-->
+        <div class="mySlides fade">
+            <img src="img/qc1.png" style="width:100%; height: 82%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/qc2.png" style="width:100%; height: 82%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/qc3.jpg" style="width:100%; height: 82%;">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/qc4.png" style="width:100%; height: 82%;">
+        </div>
+        <!-- Nút điều khiển mũi tên-->
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br>
+    <!-- Nút tròn điều khiển slideshow-->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+
+    <!--Bat dau San phan noi bat-->
+    <div class="san-pham-noi-bat" id="spnb">
+        <div class="text-spnb">
+            <h2 class="title"><a href="#spnb">Sản phẩm nổi bật</a></h2>
+        </div>
+        <!--Box San pham-->
+        <ul class="list-product">
+            <!--Product 1-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Andes 3S219L-Nón bảo hiểm 3/4 dành cho size đầu lớn">
+                            <img src="img/sp-ing/sp1.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Andes 3S219LNón bảo hiểm 3/4 dành cho size đầu lớn">Andes 3S219L-Nón bảo hiểm 3/4 dành cho size đầu lớn</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 580.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 2-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct2-user.html" title="Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng">
+                            <img src="img/sp-ing/sp2.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct2-user.html" title="Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng">Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 530.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct2-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 3-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa">
+                            <img src="img/sp-ing/sp3.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa">Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 500.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 4-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng">
+                            <img src="img/sp-ing/sp4.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng">GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 230.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 5-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontr-ct-user.html" title="Kitty màu trắng tai hồng Nón bảo hiểm hình thú">
+                            <img src="img/sp-ing/sp5.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nontr-ct-user.html" title="Kitty màu trắng tai hồng Nón bảo hiểm hình thú ">Kitty màu trắng tai hồng Nón bảo hiểm hình thú</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 290.000 VND</span>
+                        </div>
+                        <a href="nontr-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 6-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Royal M139 Nón bảo hiểm Kinh âm Design ">
+                            <img src="img/sp-ing/sp6.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Royal M139 Nón bảo hiểm Kính âm Design">Royal M139 Nón bảo hiểm Kính âm Design</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 685.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 7-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontt-ct-user.html" title="Kiho Nón bảo hiểm xe đạp có kính lắp nam châm ">
+                            <img src="img/sp-ing/sp7.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nontt-ct-user.html" title="Kiho Nón bảo hiểm xe đạp có kính lắp nam châm">Kiho Nón bảo hiểm xe đạp có kính lắp nam châm</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 450.000 VND</span>
+                        </div>
+                        <a href="nontt-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 8-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontt-ct2-user.html" title=" Fornix A02NM038L Nón bảo hiểm xe đạp có mui dài">
+                            <img src="img/sp-ing/sp8.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nontt-ct2-user.html" title="Fornix A02NM038L Nón bảo hiểm xe đạp có mui dài">Fornix A02NM038L Nón bảo hiểm xe đạp có mui dài</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 560.000 VND</span>
+                        </div>
+                        <a href="nontt-ct2-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 9-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontr-ct2-user.html" title="Royal M20C-Nón bảo hiểm 3/4">
+                            <img src="img/sp-ing/sp9.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nontr-ct2-user.html" title="Royal M20C-Nón bảo hiểm 3/4">Royal M20C Design V1-Nón bảo hiểm 3/4</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 560.000 VND</span>
+                        </div>
+                        <a href="nontr-ct2-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 10-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontr-ct-user.html" title="JOKO racer 268: Nón bảo hiểm 3/4 ">
+                            <img src="img/sp-ing/sp10.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nontr-ct-user.html" title="JOKO racer 268: Nón bảo hiểm 3/4">JOKO racer 268: Nón bảo hiểm 3/4</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 290.000 VND</span>
+                        </div>
+                        <a href="nontr-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 11-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng
+                ">
+                            <img src="img/sp-ing/sp2.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng">Royal M20C-Nón bảo hiểm 3/4 cổ điển sang trọng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 530.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 12-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa">
+                            <img src="img/sp-ing/sp3.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa">Bulldog Gang-Nón bảo hiểm nửa đầu đua ngựa</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 500.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 13-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng">
+                            <img src="img/sp-ing/sp4.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng">GRS A360 Nón bảo hiểm 3/4 đầu thiết kế rộng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 230.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 14-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontt-ct-user.html" title="Kitty màu trắng tai hồng Nón bảo hiểm hình thú">
+                            <img src="img/sp-ing/sp5.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT" style="float: left;padding-right: 5px;"><span>NỔI BẬT</span></div>
+                        <div class="NEW"><span>MỚI</span></div>
+                        <h4>
+                            <a href="nontt-ct-user.html" title="Kitty màu trắng tai hồng Nón bảo hiểm hình thú ">Kitty màu trắng tai hồng Nón bảo hiểm hình thú</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 290.000 VND</span>
+                        </div>
+                        <a href="nontt-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 15-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nonbh-ct-user.html" title="Royal M139 Nón bảo hiểm Kinh âm Design ">
+                            <img src="img/sp-ing/sp6.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nonbh-ct-user.html" title="Royal M139 Nón bảo hiểm Kính âm Design">Royal M139 Nón bảo hiểm Kính âm Design</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 685.000 VND</span>
+                        </div>
+                        <a href="nonbh-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Product 16-->
+            <li>
+                <div class="bglipro">
+                    <figure class="product-img">
+                        <a href="nontt-ct-user.html" title="Kiho Nón bảo hiểm xe đạp có kính lắp nam châm ">
+                            <img src="img/sp-ing/sp7.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <div class="HOT"><span>NỔI BẬT</span></div>
+                        <h4>
+                            <a href="nontt-ct-user.html" title="Kiho Nón bảo hiểm xe đạp có kính lắp nam châm">Kiho Nón bảo hiểm xe đạp có kính lắp nam châm</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 450.000 VND</span>
+                        </div>
+                        <a href="nontt-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!--Phụ kiện nổi bật khác-->
+    <div class="phu-kien-noi-bat" id="pknb">
+        <div class="text-spnb">
+            <h2 class="title"><a href="#pknb">Phụ kiện nổi bật </a></h2>
+        </div>
+        <ul class="list-product2">
+            <!--Phụ kiện 1-->
+            <li>
+                <div class="bglipro2">
+                    <figure class="product-img">
+                        <a href="phukien-ct-user.html" title="EGO Găng tay xe máy dài ngón">
+                            <img src="img/pk-img/pk1.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="EGO Găng tay xe máy dài ngón">EGO Găng tay xe máy dài ngón</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 250.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 2-->
+            <li>
+                <div class="bglipro2">
+                    <figure class="product-img">
+                        <a href="phukien-ct-user.html" title="Soumy MC23 Găng tay full ngón">
+                            <img src="img/pk-img/pk2.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Soumy MC23 Găng tay full ngón">Soumy MC23 Găng tay full ngón</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 190.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 3-->
+            <li>
+                <div class="bglipro2">
+                    <figure class="product-img">
+                        <a href="phukien-ct2-user.html" title="EGO Găng tay hở ngón chính hãng-Bền chắc">
+                            <img src="img/pk-img/pk3.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <h4>
+                            <a href="phukien-ct2-user.html" title="EGO Găng tay hở ngón chính hãng-Bền chắc">EGO Găng tay hở ngón chính hãng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 140.000 VND</span>
+                        </div>
+                        <a href="phukien-ct2-.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 4-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="GRS: Kính Chắn Gió nón nửa đầu">
+                            <img src="img/pk-img/pk4.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="GRS: Kính Chắn Gió nón nửa đầu ">GRS: Kính Chắn Gió nón nửa đầu</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 140.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 5-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="Kính phi công: nón bảo hiểm 3/4 đầu">
+                            <img src="img/pk-img/pk5.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Kính phi công: nón bảo hiểm 3/4 đầu">Kính phi công: nón bảo hiểm 3/4 đầu</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 80.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 6-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="Motocross Kính Mũ Bảo Hiểm">
+                            <img src="img/pk-img/pk6.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Motocross Kính Mũ Bảo Hiểm">Motocross Kính Mũ Bảo Hiểm</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 80.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 7-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="Kính mũ bảo hiểm dây bạc">
+                            <img src="img/pk-img/pk7.png" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Kính mũ bảo hiểm dây bạc">Kính mũ bảo hiểm dây bạc</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 80.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 8-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="Probiker Găng tay cụt ngón">
+                            <img src="img/pk-img/pk8.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Probiker Găng tay cụt ngón">Probiker Găng tay cụt ngón</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 130.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 9-->
+            <li>
+                <div class="bglipro2">
+                    <figure class="product-img">
+                        <a href="phukien-ct-user.html" title="Soumy MC23 Găng tay full ngón">
+                            <img src="img/pk-img/pk2.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Soumy MC23 Găng tay full ngón">Soumy MC23 Găng tay full ngón</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 190.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 10-->
+            <li>
+                <div class="bglipro2">
+                    <figure class="product-img">
+                        <a href="phukien-ct-user.html" title="EGO Găng tay hở ngón chính hãng-Bền chắc">
+                            <img src="img/pk-img/pk3.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="EGO Găng tay hở ngón chính hãng-Bền chắc">EGO Găng tay hở ngón chính hãng</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0;">
+                        <div class="price-box">
+                            <span>Giá: 140.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 11-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="GRS: Kính Chắn Gió nón nửa đầu">
+                            <img src="img/pk-img/pk4.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="GRS: Kính Chắn Gió nón nửa đầu ">GRS: Kính Chắn Gió nón nửa đầu</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 140.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+            <!--Phụ kiện 12-->
+            <li>
+                <div class=" bglipro2 ">
+                    <figure class="product-img ">
+                        <a href="phukien-ct-user.html" title="Kính phi công: nón bảo hiểm 3/4 đầu">
+                            <img src="img/pk-img/pk5.jpg" alt="">
+                        </a>
+                    </figure>
+                    <div class="product-item-info ">
+                        <h4>
+                            <a href="phukien-ct-user.html" title="Kính phi công: nón bảo hiểm 3/4 đầu">Kính phi công: nón bảo hiểm 3/4 đầu</a>
+                        </h4>
+                    </div>
+                    <div style="padding: 0px 10px 0; ">
+                        <div class="price-box ">
+                            <span>Giá: 80.000 VND</span>
+                        </div>
+                        <a href="phukien-ct-user.html"><button>Xem chi tiết</button></a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!--Kết thúc phụ kiện nổi bật khác-->
+
+    <!--Bắt đầu Footer-->
+    <footer id="footer">
+        <div class="container">
+            <ul>
+                <li class="footer1">
+                    <div class="heading">Chính sách</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">Chính sách giao hàng</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo hành & đổi trả</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách thanh toán</a></li>
+                            <li><a href="#" rel="nofollow">Chính sách bảo mật thông tin</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Dịch vụ & hỗ trợ</div>
+                    <div class="content-footer">
+                        <ul>
+                            <li><a href="#" rel="nofollow">An toàn mua bán</a></li>
+                            <li><a href="#" rel="nofollow">Đăng ký cộng tác viên</a></li>
+                            <li><a href="#" rel="nofollow">Câu hỏi thường gặp</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Thông tin liên hệ</div>
+                    <div class="content-footer">
+                        <div class="social-media">
+                            <a href="#" class="button-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="button-ggplus"><i class="fa fa-google-plus"></i></a>
+                            <a href="#" class="button-youtube"><i class="fa fa-youtube"></i></a>
+                        </div>
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+
+                <li class="footer1">
+                    <div class="heading">Góp ý, phản ánh</div>
+                    <div class="content-footer">
+                        <span style="font-weight: bold; color: black;">0123.456.789 (Hồ Chí Minh)</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--Text cuối-->
+    </footer>
+    <!--Kết thúc Footer-->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+
+</html>

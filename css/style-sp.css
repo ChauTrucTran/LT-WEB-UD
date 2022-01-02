@@ -1,0 +1,228 @@
+.menu {
+    width: 100%;
+    height: 70px;
+}
+
+.text-lien-ket {
+    padding: 50px 0;
+    margin-bottom: 10px;
+}
+
+.text-lien-ket ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.text-lien-ket ul li {
+    float: left;
+    padding-right: 10px;
+}
+
+.fa-angle-right {
+    color: #008fd5;
+}
+
+.text-lien-ket a {
+    color: #008fd5;
+}
+
+.title-sp {
+    width: 100%;
+    padding: 0;
+    font-size: 21px;
+    color: #000;
+    text-transform: uppercase;
+    border-left: 7px solid #fdd504;
+}
+
+
+/*Box san pham*/
+
+.product-item-info h4 {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+    overflow: hidden;
+    text-align: left;
+    padding: 2px 0 1px;
+}
+
+.price-box {
+    padding: 3px 0 1px;
+}
+
+.price-box span {
+    color: #c10017;
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.product-item-info button {
+    width: 35%;
+    color: #fff;
+    background-color: #337ab7;
+}
+
+.product-item-info button:hover {
+    color: #000;
+    background-color: #fdd504;
+}
+
+ul.list-product .bglipro {
+    height: 400px;
+}
+
+
+/*Phân trang*/
+
+.phan-trang {
+    width: 100%;
+    margin-top: 0px;
+    text-align: right;
+}
+
+ul.phan-trang-sp li {
+    display: inline;
+}
+
+ul.phan-trang-sp li a {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    color: #010100;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+ul.phan-trang-sp li a:hover {
+    background-color: #eee;
+    border-color: #ddd;
+    color: #23527c;
+}
+
+.color-pag {
+    background-color: #fdd504;
+    color: #000;
+}
+
+#myPages {
+    display: none;
+}
+
+.text-lien-ket-sp {
+    padding: 25px 0;
+    margin-bottom: 10px;
+}
+
+
+/*Chi tiết sản phẩm*/
+
+.chi-tiet {
+    width: 100%;
+    height: 1180px;
+}
+
+.chi-tiet-sp {
+    background-color: #fff;
+    float: left;
+}
+
+.anh-sp {
+    width: 58%;
+    margin: 0 -17% 0% 4%;
+    float: left;
+}
+
+.anh-sp img {
+    width: 70%;
+}
+
+.thong-tin-sp {
+    margin-top: 3%;
+    margin-left: 3%;
+    width: 42%;
+    float: left;
+}
+
+.thong-tin-sp h2 {
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.gia-sp h1 {
+    margin-left: 73%;
+}
+
+.tt-sp {
+    display: table;
+    width: 100%;
+    float: left;
+    margin-bottom: 2%;
+}
+
+.tt-sp label {
+    color: red;
+    font-weight: bold;
+}
+
+.tt-sp li {
+    width: 100%;
+    margin-top: 1%;
+    margin-left: 4%;
+    font-size: 15px;
+}
+
+.other {
+    margin-top: 50px;
+}
+
+.other input {
+    margin-bottom: 0%;
+}
+
+
+/*Mô tả sp*/
+
+.chi-tiet-sp-them {
+    float: left;
+    width: 100%;
+    margin-top: 3%;
+    height: 485px;
+}
+
+.menu-chi-tiet-sp {
+    width: 100%;
+    background: #eee;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.menu-chi-tiet-sp ul {
+    list-style: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+.menu-chi-tiet-sp ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    color: #333;
+}
+
+.chi-tiet-sp-text {
+    background: #fff;
+    width: 100%;
+    height: 700px;
+}
+
+.noi-dung {
+    background-color: #a9a9a914;
+    padding: 15px 0px;
+    font-size: 14px;
+}
+
+.noi-dung p {
+    margin-bottom: 10px;
+}

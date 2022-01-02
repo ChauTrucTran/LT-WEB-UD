@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NQTSHOP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style-user.css">
+    <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css">
+    <link rel="icon" href="../img/logo_icon.png">
+
+</head>
+
+<body>
+    <header id="header">
+        <!--Bat dau header top-->
+        <div class="headerTop">
+            <div class="container">
+                <span style="font-style: italic;">SĐT:</span>
+                <span style="font-weight: bold; color:black;">0123.456.789 (Hồ Chí Minh)</span>
+            </div>
+        </div>
+        <!--Bat dau header mid-->
+        <div class="headerMid">
+            <div class="container">
+                <div class="headerMid-logo">
+                    <a href="index-user.html" title="Trang chủ">
+                        <img src="../img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <form class="headerMid-search">
+                    <input type="search" placeholder="Bạn muốn tìm gì..." aria-label="Search" name="search" id="getIn">
+                    <button type="button" value="search" id="getBut"><img src="../img/search-icon.svg" alt="search" style="width:100%; text-align: center;" onclick="timkiemuser();"></button>
+                </form>
+                <div class="headerMid-notify">
+                    <!--Đăng nhập, giỏ hàng, đăng xuất-->
+                    <ul>
+                        <li class="login">
+                            <a href="../user/index.html"><span><img src="../img/user-circle-solid.svg" ></span>Quản lý tài khoản</a>
+                        </li>
+                        <li class="shopping-cart">
+                            <a href="../giohang-user.html"><span><img src="../img/shopping-cart-icon.svg" title="Giỏ hàng" alt="shopping-cart-icon"></span>Giỏ hàng</a>
+                        </li>
+                        <li class="logout">
+                            <a href="../index.html"><span><img src="../img/sign-out-alt-solid.svg" title="Đăng xuất"></span>Đăng xuất</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--Ket thuc header-->
+    <!--Bat dau navbar-->
+    <nav class="navigation">
+        <ul>
+            <li>
+                <a href="../index-user.html">TRANG CHỦ</a>
+            </li>
+            <li>
+                <a href="../nonbh-user.html">NÓN BẢO HIỂM</a>
+            </li>
+            <li>
+                <a href="../nontr-user.html">NÓN THỜI TRANG</a>
+            </li>
+            <li>
+                <a href="../nontt-user.html">NÓN THỂ THAO</a>
+            </li>
+            <li>
+                <a href="../phukien-user.html">PHỤ KIỆN</a>
+            </li>
+        </ul>
+    </nav>
+    <!--Ket thuc navbar-->
+
+    <div class="Wrapper">
+        <div class="text-lien-ket ">
+            <div class="container ">
+                <ul>
+                    <li>
+                        <a href="../index-user.html ">TRANG CHỦ</a>&nbsp;
+                        <i class="fa fa-angle-right "></i>
+                        <a href="index.html ">Thông tin tài khoản</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container ">
+            <div class="menu-left ">
+                <div class="profiles ">
+                    <p class="image "><img src="../img/user-circle-solid.svg "></p>
+                    <p class="name ">Tài khoản của</p>
+                    <h6>Lu Mỹ Như</h6>
+                </div>
+
+                <div class="menu-dropdown ">
+                    <ul class="dropdown-menu " role="menu ">
+                        <li class="active ">
+                            <a href="index.html "><img src="../img/user-login-icon.svg " width="13px; ">Thông tin tài khoản</a>
+                        </li>
+                        <li>
+                            <a href="QuanLyDonHang.html "><img src="../img/clipboard-list-solid.svg " width="13px; ">Quản lý đơn hàng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-right ">
+            <h1>Thông tin tài khoản</h1>
+            <div class="content-main ">
+                <div class="form-control ">
+                    <label>Họ và tên</label>
+                    <input type="text " name="Họ tên " placeholder="Họ tên " value="Lu Mỹ Như ">
+                </div>
+                <div class="form-control ">
+                    <label>Số điện thoại</label>
+                    <input type="text " name="SDT " placeholder="SDT " value="0932753109 ">
+                </div>
+                <div class=" form-control ">
+                    <label>Email</label>
+                    <input type="text " name="Email " placeholder="Email " value="lumynhu@mail.com ">
+                </div>
+                <div class="form-control ">
+                    <label>Giới tính</label>
+                    <input type="text " name="gioitinh " placeholder="gioitinh " value="nữ">
+                </div>
+                <button type="submit " class="btn-update ">Cập nhật</button>
+            </div>
+        </div>
+    </div>
+
+</body>
